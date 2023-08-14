@@ -16,6 +16,11 @@ function Main() {
   useEffect(() => {
     getUsers();
   }, []);
+
+  const remove = (id) => {
+    let newPerson = users.filter((person) => person.id !== id);
+    setUsers(newPerson);
+  };
   return (
     <>
       <ul className="users">
@@ -29,7 +34,7 @@ function Main() {
                 <a href={html_url} target="_blink">
                   profile
                 </a>
-                <button>X</button>
+                <button onClick={() => remove(id)}>Remove</button>
               </div>
             </li>
           );
