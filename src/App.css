@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: lightcoral;
 }
 
 .header {
@@ -17,17 +17,18 @@ body {
 
 .title {
   font-size: 3rem;
+  color: white;
 }
 .github-icon {
   font-size: 5rem;
-  color: black;
+  color: #fff;
   padding-top: 40px;
 }
 
 .container {
   width: 90vw;
   margin: 0 auto;
-  max-width: var(--max-width);
+  max-width: 1170px;
 }
 
 .users {
@@ -56,6 +57,15 @@ body {
   margin-bottom: 0.15rem;
 }
 .users a {
-  color: var(--clr-grey-5);
+  color: black;
   text-transform: capitalize;
+}
+
+a {
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  margin-left: 180px;
 }
