@@ -1,7 +1,10 @@
-import React from "react";
+import Header from "./Header";
+
+// Api link
+const url = "https://api.github.com/users";
 
 function Main() {
-  return <main className="main">{/* i will fetch data here */}</main>;
+  return <div></div>;
 }
 
 export default Main;
