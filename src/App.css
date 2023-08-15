@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: lightcoral;
+  background-color: darkgrey;
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
 }
 .github-icon {
   font-size: 5rem;
-  color: #fff;
+  color: lightcoral;
   padding-top: 40px;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .users {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 2rem;
   margin: 3rem auto;
 }
@@ -48,6 +48,7 @@ body {
   text-align: left;
 }
 .users img {
+  border: 3px solid lightcoral;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -59,13 +60,30 @@ body {
 .users a {
   color: black;
   text-transform: capitalize;
+  text-decoration: none;
+}
+.btn {
+  margin-left: 250px;
+  position: absolute;
+  padding: 5px 10px;
+  background-color: lightcoral;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+@media screen and (max-width: 770px) {
+  .btn {
+    margin-right: 30px;
+  }
 }
 
-a {
-  display: inline-block;
-}
+@media screen and (max-width: 415px) {
+  .title {
+    font-size: 2.1rem;
+    text-align: center;
+  }
 
-button {
-  display: inline-block;
-  margin-left: 180px;
+  .github-icon {
+    font-size: 4.5rem;
+  }
 }

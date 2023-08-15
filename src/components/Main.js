@@ -29,12 +29,14 @@ function Main() {
           return (
             <li key={id}>
               <img src={avatar_url} alt={login} />
+              <button className="btn" onClick={() => remove(id)}>
+                X
+              </button>
               <div>
                 <h4>{login}</h4>
                 <a href={html_url} target="_blink">
                   profile
                 </a>
-                <button onClick={() => remove(id)}>Remove</button>
               </div>
             </li>
           );
