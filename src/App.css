@@ -35,7 +35,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   gap: 2rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
 .users li {
@@ -71,6 +71,20 @@ body {
   cursor: pointer;
   border: none;
 }
+
+form {
+  padding-top: 30px;
+  text-align: center;
+}
+
+form input {
+  padding: 5px 10px;
+  width: 18rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid lightcoral;
+}
+
 @media screen and (max-width: 770px) {
   .btn {
     margin-right: 30px;
@@ -85,5 +99,10 @@ body {
 
   .github-icon {
     font-size: 4.5rem;
+  }
+
+  form input {
+    width: 16rem;
+    margin-right: 20px;
   }
 }

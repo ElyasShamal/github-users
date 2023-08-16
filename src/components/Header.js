@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import Input from "./Input";
 
 function Header() {
   return (
@@ -10,6 +11,7 @@ function Header() {
           <FaGithub className="github-icon" />
         </span>
       </h1>
+      <Input />
     </div>
   );
 }

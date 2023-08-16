@@ -1,11 +1,12 @@
 import React from "react";
 
-function Form() {
+function Input() {
   return (
     <form>
       <input type="text" placeholder="...Search" />
+      <div></div>
     </form>
   );
 }
 
-export default Form;
+export default Input;
